@@ -26,7 +26,7 @@ source('code/isolation_growth_rate.R')
 source('code/gatheringsize_main.R') 					
 source('code/gatheringsize_od.R') 						
 
-# General parameter inference
+# Epi parameter inference
 source('code/growthrate.R') 							
 source('code/g_identifiability.R')						
 

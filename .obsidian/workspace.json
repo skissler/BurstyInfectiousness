@@ -185,6 +185,7 @@
   },
   "active": "e0dd35fbc242b5c2",
   "lastOpenFiles": [
+    "output/psi_identifiability_calibration.csv",
     "figures/psi_empirical_si_Nipah_virus.pdf",
     "figures/psi_empirical_si_Pneumonic_plague.pdf",
     "figures/psi_empirical_si_COVID_19.pdf",
@@ -195,7 +196,6 @@
     "figures/psi_empirical_si_Measles.pdf",
     "figures/psi_empirical_si_Ebola.pdf",
     "figures/psi_empirical_si_MERS.pdf",
-    "figures/psi_empirical_si_Influenza.pdf",
     "figures/psi_empirical_si_Hepatitis_A.png",
     "figures/psi_empirical_si_Measles.png",
     "figures/psi_empirical_summary.png",
