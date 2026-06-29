@@ -38,7 +38,7 @@ Runs a basic set of uncontrolled epidemic simulations, calculates overdispersion
 
 - `episims.R` generates simulations of uncontrolled epidemics under the Gamma burst model for different values of $\psi$, and produces daily and cumulative case count figures
 - `overdispersion_extinction.R` calculates the extinction probability of epidemics when contact rates vary over time, leading to coincidence superspreading
-- `overdispersion_heatmaps.R` generates heatmaps of the simulation-based an analytic overdispersion resulting from time-varying contacts 
+- `overdispersion_heatmaps.R` generates heatmaps of the simulation-based and analytic overdispersion resulting from time-varying contacts 
 - `survival.R` conducts the epidemic establishment survival analysis, capturing the epidemic time shift that becomes more variable with bursty infectiousness. 
 
 ### Controlled epidemics
@@ -47,8 +47,8 @@ Runs a set of scripts to assess the impact of detect-and-isolate interventions a
 - `isolation_te.R` computes testing effectiveness for detect-and-isolate interventions with various detection strategies (deterministic, symptom-based, screening-based, and screening-based with turnaround delay) 
 - `isolation_overdispersion.R` computes the overdispersion that results from symptom-based detection and isolation 
 - `isolation_gi_truncation.R` computes the generation interval truncation that results from symptom-based detection and isolation using simulations of transmission clusters 
-- `isolation_gi_truncation_deterministic.R` computes the generation interval trunction that results from symptom-based detection and isolation analytically 
-- `isolation_growth_rate.R` computes the adjusted growth rate that arisese from generation interval truncation under D&I intervention
+- `isolation_gi_truncation_deterministic.R` computes the generation interval truncation that results from deterministic detection and isolation analytically 
+- `isolation_growth_rate.R` computes the adjusted growth rate that arises from generation interval truncation under D&I intervention
 - `gatheringsize_main.R` generates simulations of gathering-size-restricted epidemics to compare extinction probabilities
 - `gatheringsize_od.R` deterministically computes the overdispersion and predicted epidemic extinction probabilities produced by gathering size restrictions
 
