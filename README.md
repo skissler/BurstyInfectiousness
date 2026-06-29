@@ -27,7 +27,7 @@ The full set of analysis code is run by sourcing `code/run_analysis.R`. All code
 - **parameters.R** generates a list of attributes for the benchmark pathogens (influenza, SARS-CoV-2 omicron, measles) 
 
 ### Psi inference
-*Conducts the inference and identifiability analysis for the burstiness parameter $\psi$.*
+Conducts the inference and identifiability analysis for the burstiness parameter $\psi$.
 
 ### Uncontrolled epidemics
 *Runs a basic set of uncontrolled epidemic simulations, calculates overdispersion with time-varying contacts, and conducts the survival analysis of time-to-epidemic-establishment.* 
