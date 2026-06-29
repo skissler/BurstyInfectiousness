@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "3e078cdb48a4a1b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "3371d0d152918e38",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0dd35fbc242b5c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a576334ec961b9af",
+    "type": "split",
+    "children": [
+      {
+        "id": "6127efe8fa4784ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e7ddabb7e65bc15",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0eece01c95cc6a3a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "08df4a180ad74181",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a54d4f4a81f45087",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6a087e053524218",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1b1e3a7ca1b11c0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for README"
+            }
+          },
+          {
+            "id": "99d86eb2d19c83cc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from README"
+            }
+          },
+          {
+            "id": "55a75f60874aab30",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "aacdea1b7335eb2a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e5266c5b8147255b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "e0dd35fbc242b5c2",
+  "lastOpenFiles": [
+    "figures/psi_empirical_si_Nipah_virus.pdf",
+    "figures/psi_empirical_si_Pneumonic_plague.pdf",
+    "figures/psi_empirical_si_COVID_19.pdf",
+    "figures/psi_empirical_si_Smallpox.pdf",
+    "figures/psi_empirical_summary.pdf",
+    "figures/psi_empirical_si_Norovirus.pdf",
+    "figures/psi_empirical_posteriors.pdf",
+    "figures/psi_empirical_si_Measles.pdf",
+    "figures/psi_empirical_si_Ebola.pdf",
+    "figures/psi_empirical_si_MERS.pdf",
+    "figures/psi_empirical_si_Influenza.pdf",
+    "figures/psi_empirical_si_Hepatitis_A.png",
+    "figures/psi_empirical_si_Measles.png",
+    "figures/psi_empirical_summary.png",
+    "figures/psi_empirical_si_COVID_19.png",
+    "figures/psi_empirical_si_MERS.png",
+    "figures/psi_empirical_si_Norovirus.png",
+    "figures/psi_empirical_si_Influenza.png",
+    "figures/psi_empirical_si_Ebola.png",
+    "figures/psi_empirical_si_Nipah_virus.png",
+    "figures/psi_empirical_si_Smallpox.png"
+  ]
+}
