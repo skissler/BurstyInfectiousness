@@ -9,3 +9,7 @@ figures/*
 
 # macOS
 .DS_Store
+
+# claude 
+*claude*
+*CLAUDE*
