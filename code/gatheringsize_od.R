@@ -69,20 +69,7 @@ od_analytic <- function(psi, alpha, beta, sigma, lambda, c_max) {
 	V_c * I_psi / mu_c^2
 }
 
-# Lloyd-Smith et al. (Nature 2005) extinction probability for a branching
-# process with NegBin(R0, k) offspring distribution: q solves q = G(q) where
-# G(q) = (1 + R0*(1-q)/k)^(-k). For R0 <= 1, q = 1. For k -> Inf the NegBin
-# limits to Poisson and G(q) = exp(-R0*(1-q)).
-extinction_prob_negbin <- function(R0, k) {
-	if (R0 <= 1) return(1)
-	g <- if (is.infinite(k) || k > 1e8) {
-		function(q) exp(-R0 * (1 - q)) - q
-	} else {
-		function(q) (1 + R0 * (1 - q) / k)^(-k) - q
-	}
-	uniroot(g, c(1e-12, 1 - 1e-12))$root
-}
-
+# extinction_prob_negbin() (Lloyd-Smith et al., Nature 2005) now lives in utils.R.
 # Expected establishment probability given (R0, k) in this NegBin framework.
 p_est_theory <- function(R0, k) 1 - extinction_prob_negbin(R0, k)
 

@@ -726,10 +726,38 @@ extinction_prob <- function(R0) {
 	q
 }
 
-# Helper: save a ggplot as both .png and .pdf in figures/
+#' Extinction probability for a NegBin(R0, k) branching process
+#'
+#' Lloyd-Smith et al. (Nature 2005) extinction probability for a branching
+#' process with NegBin(R0, k) offspring: q solves q = G(q) where
+#' G(q) = (1 + R0*(1-q)/k)^(-k). For R0 <= 1, q = 1. As k -> Inf the NegBin
+#' limits to Poisson and G(q) = exp(-R0*(1-q)).
+#'
+#' @param R0 Basic reproduction number.
+#' @param k Overdispersion parameter (k -> Inf recovers the Poisson case).
+#' @return Scalar extinction probability in [0, 1].
+extinction_prob_negbin <- function(R0, k) {
+	if (R0 <= 1) return(1)
+	g <- if (is.infinite(k) || k > 1e8) {
+		function(q) exp(-R0 * (1 - q)) - q
+	} else {
+		function(q) (1 + R0 * (1 - q) / k)^(-k) - q
+	}
+	uniroot(g, c(1e-12, 1 - 1e-12))$root
+}
+
+# Helper: save a ggplot as both .png and .pdf in figures/, and stash the plot
+# object itself under figures/_objects/. The saved object lets Extended Data /
+# resized versions be re-rendered at new sizes later (see make_extended_data.R)
+# WITHOUT re-running the analysis -- and, crucially, re-rendering (rather than
+# resizing the exported image) is the only way to fix text that ends up too
+# small when panels are composited or scaled down.
 save_fig <- function(plot, name, width = 10, height = 5) {
 	ggsave(file.path("figures", paste0(name, ".pdf")), plot, width = width, height = height)
 	ggsave(file.path("figures", paste0(name, ".png")), plot, width = width, height = height, dpi = 300)
+	obj_dir <- file.path("figures", "_objects")
+	if (!dir.exists(obj_dir)) dir.create(obj_dir, recursive = TRUE)
+	saveRDS(plot, file.path(obj_dir, paste0(name, ".rds")))
 }
 
 # ==============================================================================

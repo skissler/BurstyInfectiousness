@@ -1,5 +1,7 @@
 # Large simulation output
 output/*.csv
+output/*.rds
+output/*.RDS
 figures/*
 
 # R artifacts
