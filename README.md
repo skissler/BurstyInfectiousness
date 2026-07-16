@@ -1,4 +1,4 @@
-# How bursty infectiousness shapes epidemic dynamics and control
+# How bursty infectiousness shapes epidemic dynamics
 **[Stephen M. Kissler](mailto:stephen.kissler@colorado.edu)**
 
 ---
