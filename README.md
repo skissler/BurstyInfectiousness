@@ -3,7 +3,7 @@
 
 ---
 
-This repository contains the data and code for reproducing the findings from *How bursty infectiousness shapes epidemic dynamics and control*, by Stephen M. Kissler. 
+This repository contains the data and code for reproducing the findings from *How bursty infectiousness shapes epidemic dynamics*, by Stephen M. Kissler. 
 
 ## Package requirements
 Code is fully implemented in R. The codebase requires the following packages: 
